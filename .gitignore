@@ -1,2 +1,4 @@
-# Project exclude paths
-/.gradle/
+# Created by .ignore supprort plugin (hsz.mobi)
+
+.gradle
+.idea
