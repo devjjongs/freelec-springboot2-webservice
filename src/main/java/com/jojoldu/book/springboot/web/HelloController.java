@@ -8,6 +8,6 @@ public class HelloController {
 
     @GetMapping("/hello")//페이지 이름을 hello로 설정
     public String hello() {
-        return hello();
+        return "hello";
     }
 }
