@@ -2,6 +2,7 @@ package com.jojoldu.book.springboot.domain.posts;
 
 //롬복은 코드를 단순화시켜 주지만 필수 어노테이션은 아니다
 
+import com.jojoldu.book.springboot.domain.BaseTimeEntity;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -11,7 +12,7 @@ import javax.persistence.*;
 @Getter // 6 : lombok의 어노테이션, 클래스 내 모든 필드의 Getter 메소드를 자동 생성
 @NoArgsConstructor // 5 : lombok의 어노테이션, 기본 생성자 자동 추가, public Posts(){}와 같은 효과
 @Entity // 1 : JPA의 어노테이션, 테이블과 링크될 클래스임을 나타냄, 기본값으로 클래스의 카멜케이스 이름을 언더스커어 네이밍(_)으로 테이블 이름을 매칭
-public class Posts {
+public class Posts extends BaseTimeEntity {
 
     @Id // 2 : 해당 테이블의 PK 필드를 나타냄
     @GeneratedValue(strategy = GenerationType.IDENTITY)
