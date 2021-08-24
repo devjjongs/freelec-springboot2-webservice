@@ -21,7 +21,7 @@ public class PostsSaveRequestDto {
     }
 
     public Posts toEntity() { // 절대로 Entity 클래스를 Request/Response 클래스로 사용해서는 안 됨
-                                //  Entity 클래스는 ** 데이터베이스와 맞닿는 핵심 클래스 **
+        //  Entity 클래스는 ** 데이터베이스와 맞닿는 핵심 클래스 **
         return Posts.builder()
                 .title(title)
                 .content(content)
